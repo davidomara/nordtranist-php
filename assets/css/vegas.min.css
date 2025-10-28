@@ -1,0 +1,141 @@
+/* Ensure the slideshow container fills its parent */
+#slideslow-bg {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  /* Style each slide image */
+  #slideslow-bg .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    /* Animation duration (total cycle time) */
+    animation: fade 16s infinite;
+  }
+  
+  /* Stagger the start time of each slide */
+  #slideslow-bg .slide:nth-child(1) {
+    animation-delay: 0s;
+  }
+  #slideslow-bg .slide:nth-child(2) {
+    animation-delay: 4s;
+  }
+  #slideslow-bg .slide:nth-child(3) {
+    animation-delay: 8s;
+  }
+  #slideslow-bg .slide:nth-child(4) {
+    animation-delay: 12s;
+  }
+  
+  /* Define keyframes for fading in and out */
+  @keyframes fade {
+    0% { opacity: 0; }
+    8% { opacity: 1; }
+    25% { opacity: 1; }
+    33% { opacity: 0; }
+    100% { opacity: 0; }
+  }
+  .section-padding {
+	padding: 100px 0;
+}
+/*== Choose Car Area CSS Start ==*/
+
+#choose-car.section-padding {
+	padding-bottom: 70px;
+}
+
+#service-area.section-padding {
+	padding-bottom: 50px;
+}
+
+.section-title {
+	font-size: 15px;
+	font-weight: 300;
+	margin-bottom: 80px;
+}
+
+.section-title h2 {
+	margin-bottom: 10px;
+	position: relative;
+	text-transform: uppercase;
+}
+
+.section-title p {
+	margin-top: 10px;
+}
+
+.section-title .title-line {
+	color: #7367f0;
+	position: relative;
+}
+
+.section-title .title-line::after {
+	background-color: #333;
+	content: "";
+	height: 2px;
+	left: -60px;
+	position: absolute;
+	top: 10px;
+	width: 50px;
+}
+
+.section-title .title-line::before {
+	background-color: #333;
+	content: "";
+	height: 2px;
+	position: absolute;
+	right: -60px;
+	top: 10px;
+	width: 50px;
+}
+
+.overlay .section-title h2,
+.overlay .section-title p {
+	color: #fff;
+}
+
+.overlay .section-title .title-line::after,
+.overlay .section-title .title-line::before {
+	background-color: #fff;
+}
+.section-title .title-line {
+	color: #7367f0;
+	position: relative;
+}
+
+.section-title .title-line::after {
+	background-color: #333;
+	content: "";
+	height: 2px;
+	left: -60px;
+	position: absolute;
+	top: 10px;
+	width: 50px;
+}
+
+.section-title .title-line::before {
+	background-color: #333;
+	content: "";
+	height: 2px;
+	position: absolute;
+	right: -60px;
+	top: 10px;
+	width: 50px;
+}
+
+.overlay .section-title h2,
+.overlay .section-title p {
+	color: #fff;
+}
+
+.overlay .section-title .title-line::after,
+.overlay .section-title .title-line::before {
+	background-color: #fff;
+}
